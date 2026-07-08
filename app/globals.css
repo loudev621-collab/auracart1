@@ -1,0 +1,27 @@
+/* stylelint-disable-next-line at-rule-no-unknown */
+@tailwind base;
+/* stylelint-disable-next-line at-rule-no-unknown */
+@tailwind components;
+/* stylelint-disable-next-line at-rule-no-unknown */
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container-page {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}

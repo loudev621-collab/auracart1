@@ -1,0 +1,388 @@
+# ============================================================
+# HERITAGE VAULT - COMPLETE .gitignore
+# Security-focused configuration
+# ============================================================
+
+# ────────────────────────────────────────────────────────────
+# CRITICAL: Environment Variables & Secrets
+# ────────────────────────────────────────────────────────────
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+*.env.local.backup
+*.env/*
+.env
+.env.production
+.env.test
+.env.development
+
+# Allow .env.example (template file)
+!.env.example
+
+# IDE
+.idea/
+.vscode/settings.json
+.vscode/launch.json
+*.swp
+*.swo
+
+scripts/*
+
+# OS files
+.DS_Store
+Thumbs.db
+*.log
+
+# Testing
+coverage/
+.nyc_output/
+
+# Sensitive files
+*.pem
+*.key
+*.cert
+secrets/
+credentials/
+
+# Database
+*.sqlite
+*.db
+
+# Uploads (if storing locally during dev)
+public/uploads/*
+!public/uploads/.gitkeep
+
+# Stripe CLI
+.stripe/
+
+# Legacy env files
+.env
+*.env/*
+
+# API keys and secrets
+secrets/
+*.secret
+*.pem
+*.key
+*.p12
+*.pfx
+
+# ────────────────────────────────────────────────────────────
+# Dependencies
+# ────────────────────────────────────────────────────────────
+node_modules/
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+bower_components/
+jspm_packages/
+
+# ────────────────────────────────────────────────────────────
+# Build Output & Cache
+# ────────────────────────────────────────────────────────────
+/.next/
+/out/
+/build
+/dist
+.turbo/
+.contentlayer/
+
+# Cache directories
+.cache/
+*.cache
+.parcel-cache/
+
+# Storybook
+storybook-static/
+
+# PWA files
+**/public/sw.js
+**/public/workbox-*.js
+**/public/worker-*.js
+**/public/sw.js.map
+**/public/workbox-*.js.map
+**/public/worker-*.js.map
+
+# Sentry
+.sentryclirc
+
+# Local Netlify folder
+.netlify/
+
+# =====================================================
+# PROJECT SPECIFIC
+# =====================================================
+# Add any project-specific ignores below
+
+# Temporary test files
+*.test.tmp
+*.spec.tmp
+
+# Generated files
+generated/
+.generated/
+
+# Documentation builds
+docs/_build/
+# Generated files
+generated/
+.generated/
+
+# ────────────────────────────────────────────────────────────
+# Testing & Coverage
+# ────────────────────────────────────────────────────────────
+/coverage
+/test-results
+/.nyc_output
+*.lcov
+
+# ────────────────────────────────────────────────────────────
+# User Uploads & Generated Files (CRITICAL)
+# ────────────────────────────────────────────────────────────
+public/uploads/*
+!public/uploads/.gitkeep
+
+# User-specific enhanced photos
+public/uploads/*/enhanced/*
+public/uploads/*/thumbnails/*
+public/uploads/*/originals/*
+
+# Generated thumbnails
+public/generated/
+public/optimized/
+
+# ────────────────────────────────────────────────────────────
+# Logs & Debug Files
+# ────────────────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+lerna-debug.log*
+
+# ────────────────────────────────────────────────────────────
+# OS Files
+# ────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+*.log
+logs/
+
+# =====================================================
+# IDE & EDITORS
+# =====================================================
+.idea/
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/extensions.json
+.vscode/*.code-workspace
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+# TESTING
+# =====================================================
+coverage/
+.nyc_output/
+*.lcov
+.jest/
+jest-results/
+test-results/
+playwright-report/
+playwright/.cache/
+
+*.txt
+
+# ────────────────────────────────────────────────────────────
+# IDE & Editor Files
+# ────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# ────────────────────────────────────────────────────────────
+# Deployment & CI/CD
+# ────────────────────────────────────────────────────────────
+.vercel/
+.netlify
+.firebase/
+
+# ────────────────────────────────────────────────────────────
+# TypeScript & Next.js
+# ────────────────────────────────────────────────────────────
+*.tsbuildinfo
+next-env.d.ts
+.next-build-id
+
+# Misc
+*.log
+```
+
+# =====================================================
+# BUILD OUTPUTS
+# =====================================================
+.next/
+out/
+build/
+dist/
+*.tsbuildinfo
+
+# =====================================================
+# SENSITIVE FILES - SECURITY CRITICAL
+# =====================================================
+*.pem
+*.key
+*.cert
+*.p12
+*.pfx
+secrets/
+credentials/
+.credentials/
+*.secret
+*.secrets
+private/
+.private/
+
+
+# ────────────────────────────────────────────────────────────
+# Database & Backups
+# ────────────────────────────────────────────────────────────
+*.sqlite
+*.sqlite3
+*.db
+*.sql
+backups/
+*.sql.gz
+*.dump
+
+# ────────────────────────────────────────────────────────────
+# Temporary Files
+# ────────────────────────────────────────────────────────────
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Backup files
+*.backup
+*.bak
+
+# Uploads (if storing locally during dev)
+public/uploads/*
+!public/uploads/.gitkeep
+
+# ────────────────────────────────────────────────────────────
+# Package Manager Lock Files (Optional)
+# ────────────────────────────────────────────────────────────
+# Uncomment if you want to ignore lock files
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ────────────────────────────────────────────────────────────
+# Miscellaneous
+# ────────────────────────────────────────────────────────────
+.vscode-test
+*.bak
+*.orig
+
+# Compressed archives (may contain secrets)
+*.7z
+*.zip
+*.rar
+*.tar.gz
+*.tar
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.production
+.env*.local
+*.env
+*.env.local
+*.env.production
+.env.development
+.env.test
+
+# Backup files
+*.backup
+*.bak
+*.old
+*.orig
+
+# Temporary files
+*.tmp
+*.temp
+
+
+.vercel
+
+# Sentry Config File
+.env.sentry-build-plugin
+.env.test
+
+
+# --- Test Outputs & Reports ---
+coverage/
+playwright-report/
+playwright-report-uat/
+test-results/
+blob-report/
+.jest-cache/
+
+# --- Environment (NEVER commit secrets) ---
+.env.test
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# --- Caches ---
+.next/
+.turbo/
+.eslintcache
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# --- OS/IDE ---
+.DS_Store
+Thumbs.db
+.vscode/settings.json
+*.swp
+*.swo
+*.report.html
+backups/
+
+# Playwright generated artifacts
+playwright-report/
+playwright-report-mobile/
+test-results/
+.env.production

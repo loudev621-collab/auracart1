@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="AuraCart product placeholder">
+  <rect width="800" height="600" fill="#eef2ff"/>
+  <circle cx="400" cy="260" r="120" fill="#c7d2fe"/>
+  <rect x="220" y="400" width="360" height="50" rx="25" fill="#4f46e5"/>
+  <text x="400" y="435" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="26" font-weight="700">AuraCart</text>
+</svg>
